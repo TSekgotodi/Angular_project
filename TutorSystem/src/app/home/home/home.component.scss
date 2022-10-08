@@ -3,11 +3,8 @@
 
 $header-height: 50px;
 $footer-height: 50px;
-$main-height: 900px;
+$main-height: 700px;
 
-* {
-  color: white;
-}
 .container {
   width: 95%;
   height: 95vh;
@@ -18,6 +15,7 @@ $main-height: 900px;
   margin: 50px auto 0;
   padding: 10px;
   z-index: 1;
+  color: #fff;
 
   &_header {
     height: $header-height;

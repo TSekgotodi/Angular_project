@@ -10,16 +10,16 @@ const routes: Routes = [
   //   path: '',
   //   redirectTo:'/home',
   //   pathMatch:'full'
-  
+
   // },
   {
       path: 'home',
        loadChildren: () => import('./home/home.module').then(m=>m.HomeModule)
     },
 
- 
+
   {
-    path: 'personal-details',
+    path: 'tutor',
     // component: PersonalDetailsComponent
     loadChildren: () => import('./tutor/tutor.module').then(m=>m.TutorModule)
   }
