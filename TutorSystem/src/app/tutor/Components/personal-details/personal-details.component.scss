@@ -1,6 +1,35 @@
 .personal {
-  margin: 50% auto;
+  margin: 50px auto;
   padding: 30px;
   border: 5px solid black;
   color: black;
+}
+
+.details-card
+{
+
+ position: relative;
+ top: 100px;
+width:70%;
+height:60%;
+background-color: white;
+display:flex;
+align-items: center;
+justify-content: center;
+// border-style: double;
+border-color: #9c04ab;
+border-radius: 3%;
+margin: 0 auto;
+box-shadow:-1px 0px 39px 0px #000;
+}
+
+.title-card
+{
+  display:flex;
+  align-items: center;
+  position: absolute;
+  top:-25px;
+  width:90%;
+  height: 30px;
+  background-color: #9c04ab;
 }

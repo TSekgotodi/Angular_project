@@ -1,7 +1,28 @@
 <mat-card class="card header">
+  <!-- <mat-stepper #stepper>
+    <mat-step >
+      
+        <ng-template matStepLabel>Fill out your name</ng-template>
+       
+      
+    </mat-step>
+    <mat-step label="Fill out your address">
+     
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Done</ng-template>
+    
+    </mat-step>
+  </mat-stepper> -->
   <div class="card_logo">LOGO</div>
   <div class="card_nav">
     <button class="nav_button signUp">Log In</button>
-      <button class="nav_button signUp" click="signUp()">Sign Up</button>
+    <a routerLink="/personal-details"><button class="nav_button signUp" click="signUp()">Sign Up</button></a>  
   </div>
+  <!-- <mat-tab-group>
+    <mat-tab label="First" > <personal-details></personal-details></mat-tab>
+    <mat-tab label="Second"> Content 2 </mat-tab>
+    <mat-tab label="Third"> Content 3 </mat-tab>
+  </mat-tab-group> -->
+
 </mat-card>

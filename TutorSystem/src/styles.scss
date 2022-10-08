@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;overflow: hidden; }
 
 // @import '~bootstrap/scss/bootstrap';
 // @import '~font-awesome/css/font-awesome.css';
@@ -11,11 +11,12 @@ $footer-height: 50px;
 $main-height: 900px;
 
 .container {
-  width: 95%;
+  width: 96%;
   height: 95vh;
   flex-direction: column;
   box-shadow: -1px 0px 39px 0px rgb(158,150,150);
-  margin: 10px auto;
+  margin: 30px auto;
+  box-sizing: border-box;
 
   &_header {
     height: $header-height;
@@ -53,3 +54,12 @@ $main-height: 900px;
 }
 
 
+.title {
+  text-align: center;
+  font: 'Open Sans',sans-serif;
+  color: #fff;
+  font-weight: bold;
+  font-family: Arial;
+  position: relative;
+  font-size: 11px;
+}
