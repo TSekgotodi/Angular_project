@@ -2,15 +2,17 @@ import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TutorModule } from '../tutor/tutor.module';
+import { PersonalDetailsComponent } from '../tutor/Components/personal-details/personal-details.component';
 
 const routes: Routes = [
   {
-  path: 'home',
+  path: '',
   component: HomeComponent
 },
-  {
-  path: 'tutor',
-  loadChildren: ()=> import('../tutor/tutor.module').then(m=> m.TutorModule)
+{
+  path: 'personal-details',
+   component: PersonalDetailsComponent
+  // loadChildren: () => import('../tutor/tutor.module').then(m=>m.TutorModule)
 }
 ];
 

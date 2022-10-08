@@ -6,14 +6,22 @@ import { TutorModule } from './tutor/tutor.module';
 import { PersonalDetailsComponent } from './tutor/Components/personal-details/personal-details.component';
 
 const routes: Routes = [
+  // {
+  //   path: '',
+  //   redirectTo:'/home',
+  //   pathMatch:'full'
+  
+  // },
   {
-    path: 'home',
-    component: HomeComponent},
+      path: 'home',
+       loadChildren: () => import('./home/home.module').then(m=>m.HomeModule)
+    },
 
-  //  loadChildren: () => import('./home/home/home.component').then(m=>m.HomeModule)
+ 
   {
-    path: 'personal',
-    component: PersonalDetailsComponent
+    path: 'personal-details',
+    // component: PersonalDetailsComponent
+    loadChildren: () => import('./tutor/tutor.module').then(m=>m.TutorModule)
   }
   ];
 
