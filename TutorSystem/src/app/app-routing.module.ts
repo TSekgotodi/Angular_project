@@ -6,8 +6,10 @@ import { TutorModule } from './tutor/tutor.module';
 import { PersonalDetailsComponent } from './tutor/Components/personal-details/personal-details.component';
 
 const routes: Routes = [
-  {path: 'home',
+  {
+    path: 'home',
     component: HomeComponent},
+
   //  loadChildren: () => import('./home/home/home.component').then(m=>m.HomeModule)
   {
     path: 'personal',
