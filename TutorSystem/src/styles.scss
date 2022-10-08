@@ -10,15 +10,12 @@ $header-height: 50px;
 $footer-height: 50px;
 $main-height: 900px;
 
-* {
-  color: black;
-}
 .container {
   width: 95%;
   height: 95vh;
   flex-direction: column;
-  border: 2px solid black;
-  margin: 0 auto ;
+  box-shadow: -1px 0px 39px 0px rgb(158,150,150);
+  margin: 10px auto;
 
   &_header {
     height: $header-height;
@@ -53,21 +50,6 @@ $main-height: 900px;
 .header {
   display: flex;
   justify-content: space-between;
-}
-
-.signUp {
-  height: 25px;
-  line-height: 15px;
-  border: none;
-  background-color: transparent;
-  color: white;
-  transition: all 2s;
-  cursor: pointer;
-
-  &:hover {
-    border-bottom: 2px solid #fff;
-    transition: all 1s;
-  }
 }
 
 
