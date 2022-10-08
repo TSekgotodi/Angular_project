@@ -1,0 +1,81 @@
+// @import '~bootstrap/scss/bootstrap';
+// @import '~font-awesome/css/font-awesome.css';
+
+$header-height: 50px;
+$footer-height: 50px;
+$main-height: 900px;
+
+* {
+  color: white;
+}
+.container {
+  width: 95%;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 50px auto 0;
+  padding: 10px;
+  z-index: 1;
+
+  &_header {
+    height: $header-height;
+    position: absolute;
+    left: 50px;
+    right: 50px;
+    top: 15px;
+  }
+
+  &_main {
+    height: $main-height - $header-height - $footer-height;
+  }
+
+  &_footer {
+    height: $footer-height;
+    display: flex;
+    position: relative;
+    background-color: #9c04ab;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0;
+
+  & > p {
+    margin: 0;
+  }
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.signUp {
+  height: 25px;
+  line-height: 15px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  transition: all 2s;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 2px solid #fff;
+    transition: all 1s;
+  }
+}
+
+
+.card {
+  position: relative;
+  top: 10px;
+  background-color: #9c04ab;
+  color: #9c04ab;
+  height: 20px;
+  z-index: 10;
+}
+
